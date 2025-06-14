@@ -143,167 +143,131 @@
         </div>
     </nav>
 
-
-    <!-- New Products Section -->
+    <!-- Checkout Section -->
     <section class="py-5 bg-light">
-        <div class="container py-5">
+        <div class="container">
+            <h2 class="mb-4">Checkout</h2>
+            <div class="row g-5">
 
-            <div class="row g-4">
-
-                <!-- Product 1 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product1/300/300" class="card-img-top"
-                                alt="Product 1" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product One</a>
-                            </h5>
-                            <p class="card-text">$25.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
+                <!-- Billing Form -->
+                <div class="col-lg-7">
+                    <div class="card p-4 shadow-sm">
+                        <h5 class="mb-3">Billing Details</h5>
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" class="form-control" placeholder="John" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" placeholder="Doe" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="you@example.com" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" placeholder="+8801XXXXXXXXX" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <label class="form-label">Address</label>
+                                    <input type="text" class="form-control" placeholder="123 Main Street" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">City</label>
+                                    <input type="text" class="form-control" placeholder="Dhaka" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Postal Code</label>
+                                    <input type="text" class="form-control" placeholder="1207" required>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
 
-                <!-- Product 2 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product2/300/300" class="card-img-top"
-                                alt="Product 2" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Two</a>
-                            </h5>
-                            <p class="card-text">$30.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
+                <!-- Order Summary -->
+                <div class="col-lg-5">
+                    <div class="card p-4 shadow-sm mb-4">
+                        <h5 class="mb-3">Order Summary</h5>
+                        <ul class="list-group list-group-flush mb-3">
+
+                            <!-- Product 1 -->
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="https://picsum.photos/seed/p1/50/50" class="me-3 rounded" alt="Product 1"
+                                    style="width:50px; height:50px; object-fit:cover;">
+                                <div class="flex-grow-1">
+                                    <div>Product One</div>
+                                    <small class="text-muted">Qty: 1</small>
+                                </div>
+                                <div class="fw-bold">$29.99</div>
+                            </li>
+
+                            <!-- Product 2 -->
+                            <li class="list-group-item d-flex align-items-center">
+                                <img src="https://picsum.photos/seed/p2/50/50" class="me-3 rounded" alt="Product 2"
+                                    style="width:50px; height:50px; object-fit:cover;">
+                                <div class="flex-grow-1">
+                                    <div>Product Two</div>
+                                    <small class="text-muted">Qty: 2</small>
+                                </div>
+                                <div class="fw-bold">$79.98</div>
+                            </li>
+
+                            <!-- Delivery -->
+                            <li class="list-group-item">
+                                <span>Delivery Charge</span>
+
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="delivery" id="cod" checked>
+                                    <label class="form-check-label" for="cod">In Dhaka - 50TK</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="radio" name="delivery" id="bkash">
+                                    <label class="form-check-label" for="bkash">Out Site Dhaka - 120TK</label>
+                                </div>
+
+                            </li>
+
+
+                            <!-- Total -->
+                            <li class="list-group-item d-flex justify-content-between fw-bold">
+                                <span>Total</span>
+                                <span>$114.97</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="card p-4 shadow-sm mb-4">
+                        <h5 class="mb-3">Payment Method</h5>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="cod" checked>
+                            <label class="form-check-label" for="cod">Cash on Delivery</label>
                         </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="bkash">
+                            <label class="form-check-label" for="bkash">bKash</label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="payment" id="card">
+                            <label class="form-check-label" for="card">Credit/Debit Card</label>
+                        </div>
+                    </div>
+
+                    <!-- Place Order -->
+                    <div class="d-grid">
+                        <a href="thankyou.html" class="btn btn-primary btn-lg">Place Order</a>
                     </div>
                 </div>
 
-                <!-- Product 3 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product3/300/300" class="card-img-top"
-                                alt="Product 3" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Three</a>
-                            </h5>
-                            <p class="card-text">$35.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product4/300/300" class="card-img-top"
-                                alt="Product 4" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Four</a>
-                            </h5>
-                            <p class="card-text">$40.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Product 1 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product1/300/300" class="card-img-top"
-                                alt="Product 1" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product One</a>
-                            </h5>
-                            <p class="card-text">$25.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 2 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product2/300/300" class="card-img-top"
-                                alt="Product 2" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Two</a>
-                            </h5>
-                            <p class="card-text">$30.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 3 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product3/300/300" class="card-img-top"
-                                alt="Product 3" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Three</a>
-                            </h5>
-                            <p class="card-text">$35.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 4 -->
-                <div class="col-sm-6 col-md-3">
-                    <div class="card h-100 text-center">
-                        <a href="shop-details.html">
-                            <img src="https://picsum.photos/seed/product4/300/300" class="card-img-top"
-                                alt="Product 4" />
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="shop-details.html" class="text-decoration-none text-dark">Product Four</a>
-                            </h5>
-                            <p class="card-text">$40.00</p>
-                            <a href="#" class="btn btn-outline-primary btn-sm">Add to Cart</a>
-                        </div>
-                    </div>
-                </div>
 
             </div>
-
-
-            <!-- Pagination -->
-            <nav aria-label="Page navigation example" class="mt-4">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1">Previous</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
         </div>
     </section>
+
 
 
     <!-- Footer Section -->
